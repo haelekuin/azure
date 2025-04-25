@@ -8,3 +8,4 @@
           max_workers: 3
           poll: true
           poll_interval: 60s
+    tags: [netflow, azure]
