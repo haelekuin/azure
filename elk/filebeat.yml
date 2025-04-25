@@ -1,0 +1,10 @@
+### All your other fun filebeat settings
+    - type: azure-blob-storage
+      enabled: true
+      account_name: $BLOB_ACCOUNTNAME
+      auth.shared_credentials.account_key: $BLOB_SECRET
+      containers:
+        - name: $BLOB_CONTAINER
+          max_workers: 3
+          poll: true
+          poll_interval: 60s
